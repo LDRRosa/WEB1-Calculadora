@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+
+<body>
+  <div id="calculator">
+  <input id="display" type="text" readonly />
+
+  <div id="buttons">
+    <button class="button" data-clear="C" style="background-color: red; color: white;">C</button>
+
+    <!-- Novos botões para parênteses -->
+    <button class="button button-parentheses" data-parenthesis="(">(</button>
+    <button class="button button-parentheses" data-parenthesis=")">)</button>
+
+    <button class="button button-operation" data-operation="%">%</button>
+    <button class="button button-operation" data-operation="÷">÷</button>
+
+    <button class="button button-number" data-number="7">7</button>
+    <button class="button button-number" data-number="8">8</button>
+    <button class="button button-number" data-number="9">9</button>
+    <button class="button button-operation" data-operation="×">×</button>
+
+    <button class="button button-number" data-number="4">4</button>
+    <button class="button button-number" data-number="5">5</button>
+    <button class="button button-number" data-number="6">6</button>
+    <button class="button button-operation" data-operation="-">-</button>
+
+    <button class="button button-number" data-number="1">1</button>
+    <button class="button button-number" data-number="2">2</button>
+    <button class="button button-number" data-number="3">3</button>
+    <button class="button button-operation" data-operation="+">+</button>
+
+    <button class="button button-number" data-number="0">0</button>
+    <button class="button button-number" data-decimal=",">,</button>
+    <button class="button button-equal" data-equal="=" style="background-color: blue; color: white;">=</button>
+  </div>
+</div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

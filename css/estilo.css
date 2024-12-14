@@ -1,0 +1,93 @@
+
+
+/* Estilos Gerais */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: "Arial", sans-serif;
+    background: linear-gradient(135deg, #959595, #2b2b2b);
+}
+
+#calculator {
+    width: 320px;
+    padding: 20px;
+    background-color: #d1cfcf;
+    border: #333 solid 1px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+#display {
+    width: 100%;
+    height: 60px;
+    font-size: 28px;
+    text-align: right;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+/* Estilo dos botões */
+.button {
+    height: 60px;
+    font-size: 22px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    color: #ffffff;
+}
+
+/* Estilos específicos dos botões */
+.button-clear {
+    background-color: #b22222;
+}
+
+.button-parentheses,
+.button-percentage {
+    background-color: #6c757d;
+}
+
+.button-operation {
+    background-color: #5f5f5f;
+}
+
+.button-number {
+    background-color: #ece8e8;
+    color: black;
+}
+
+.button-equal {
+    background-color: #4682b4;
+}
+
+/* Botão zero ocupa duas colunas */
+.button-zero {
+    grid-column: span 2;
+}
+
+/* Efeitos de interação */
+.button:hover {
+    filter: brightness(1.5);
+}
+
+.button:active {
+    transform: scale(0.88);
+}
